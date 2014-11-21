@@ -1,0 +1,12 @@
+development:
+  server: <%= ENV['FAYE_SERVER'] %>
+  secret_token: <%= ENV['FAYE_SECRET'] %>
+  signature_expiration: <%= ENV['FAYE_EXPIRATION'] || 3600  %>
+test:
+  server: <%= ENV['FAYE_SERVER'] %>
+  secret_token: <%= ENV['FAYE_SECRET'] %>
+  signature_expiration: <%= ENV['FAYE_EXPIRATION'] || 3600  %>
+production:
+  server: <%= ENV['FAYE_SERVER'] %>
+  secret_token: <%= ENV['FAYE_SECRET'] %>
+  signature_expiration: <%= ENV['FAYE_EXPIRATION'] || 3600  %>
