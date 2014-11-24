@@ -1,1 +1,1 @@
-exec bundle exec rackup config.ru -s thin -E $RAILS_ENV
+exec bin/rackup config.ru -s thin -E $RAILS_ENV
